@@ -2,6 +2,26 @@
 
 A seed project for front end modules, with automated build.
 
+To create a new project based on this, fork this repository and optionally transfer it to menapost-team. After cloning it, add this repo as an upstream remote so that you can retrieve updates and contribute fixes back here.
+
+```
+git add remote upstream <your git url for this repo>
+```
+
+When there is an upstream change that you want to incorporate, e.g. a new feature in the demo build script, you can merge from upstream:
+
+```
+git merge upsream/master demo/gulpfile.js
+```
+
+To make an improvement to this repo, push your changes to an upstream feature branch:
+
+```
+git push -u upstream feature-branch
+```
+
+Then submit a pull request.
+
 ## Usage
 
 **Install**:
