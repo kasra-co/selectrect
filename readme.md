@@ -32,6 +32,16 @@ Then submit a pull request.
 
 `var ExampleComponent = require( 'fembot' ).ExampleComponent;` where `fembot` is the name specified in the module's package.json. The exported object is defined in index.js.
 
+**Build as a Dependency**
+
+This module contains JSX, which must be compiled during the consumer's build process. From the consuming project, run Browserify with a Reactify transform:
+
+```
+browserify -t reactify your-index.js > your-dist.js
+```
+
+This would normally be handled by Gulp. Note that NPM submodules that need to be compiled by Browserify must include a browserify config in their [package.json](package.json), like this module.
+
 ## Structure
 
 ```
