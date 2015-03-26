@@ -39,6 +39,7 @@ var bundler = watchify( browserify(
 ));
 
 bundler.transform( 'reactify' );
+bundler.transform( 'es6ify' );
 
 bundler.on( 'update', bundle ); // On any dependency update, run the bundler
 bundler.on( 'log', gutil.log ); // Help bundler log to the terminal
