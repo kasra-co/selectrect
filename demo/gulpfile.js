@@ -8,7 +8,7 @@ var source = require( 'vinyl-source-stream' );
 var buffer = require( 'vinyl-buffer' );
 var sourcemaps = require( 'gulp-sourcemaps' );
 var uglify = require( 'gulp-uglify' );
-var sass = require( 'gulp-sass' );
+var sass = require( 'gulp-ruby-sass' );
 var _ = require( 'lodash' );
 
 gulp.task( 'watch', [ 'html', 'sass' ], function() {
@@ -23,8 +23,10 @@ gulp.task( 'html', function() {
 });
 
 gulp.task( 'sass', function() {
-	gulp.src( 'src/index.scss' )
-	.pipe( sass() )
+	return sass( 'src/index.scss' )
+	.on('error', function (err){
+		console.error('Error', err.message);
+	})
 	.pipe( gulp.dest( 'dist' ));
 });
 

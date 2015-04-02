@@ -1,1 +1,23 @@
-@import './typography.scss';
+@import "typography";
+@import "../style/partial";
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body { margin: 0; padding: 10px; }
+img { max-width: 100%; }
+.clearfix { zoom: 1; }
+.clearfix:before,
+.clearfix:after {content: "";display: table; }
+.clearfix:after { clear: both; }
+button {
+	cursor: pointer;
+}
+.facebook {
+	background-color: #306199;
+}
+.twitter {
+	background-color: #26c4f1;
+}
