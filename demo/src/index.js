@@ -10,7 +10,7 @@ let demo = (
 		initialSelection={[ 200, 100, 400, 200 ]}
 		scale={ 1 / 3 }
 		aspectRatio={ 2 / 1 }
-		updateSelection={ console.log }
+		updateSelection={ function( x0, y0, x1, y1 ) { console.log( x0, y0, x1, y1 ); }}
 	/>
 );
 
