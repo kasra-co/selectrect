@@ -12,7 +12,7 @@ var sass = require( 'gulp-ruby-sass' );
 var _ = require( 'lodash' );
 
 gulp.task( 'watch', [ 'html', 'sass' ], function() {
-	gulp.watch( 'src/**/*.scss', [ 'sass' ]);
+	gulp.watch([ 'src/**/*.scss', '../style/**/*.scss' ], [ 'sass' ]);
 	gulp.watch( 'src/index.html', [ 'html' ]);
 	bundle();
 });
