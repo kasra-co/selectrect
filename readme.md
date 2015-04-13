@@ -10,8 +10,8 @@ A rectangular selection widget.
 	initialSelection={[ 0, 0, 600, 200 ]}
 	scale={ 1 / 3 }
 	updateSelection={
-		function( x, y, width, height ) {
-			console.log( x, y, width, height );
+		function( x0, y0, x1, y1 ) {
+			console.log( x0, y0, x1, y1 );
 		}
 	}
 />
