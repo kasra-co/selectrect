@@ -11,15 +11,21 @@ var uglify = require( 'gulp-uglify' );
 var sass = require( 'gulp-ruby-sass' );
 var _ = require( 'lodash' );
 
-gulp.task( 'watch', [ 'html', 'sass' ], function() {
+gulp.task( 'watch', [ 'html', 'images', 'sass' ], function() {
 	gulp.watch([ 'src/**/*.scss', '../style/**/*.scss' ], [ 'sass' ]);
 	gulp.watch( 'src/index.html', [ 'html' ]);
+	gulp.watch( 'src/images/**/*', [ 'images' ]);
 	bundle();
 });
 
 gulp.task( 'html', function() {
 	gulp.src( 'src/index.html' )
 	.pipe( gulp.dest( 'dist' ));
+});
+
+gulp.task( 'images', function() {
+	gulp.src( 'src/images/**/*' )
+	.pipe( gulp.dest( 'dist/images' ));
 });
 
 gulp.task( 'sass', function() {
