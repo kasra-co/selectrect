@@ -11,7 +11,7 @@
   "author": "Dan Ross <daniel.ross@kasra.co>",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^3.5.0",
+    "lodash": "^3.6.0",
     "react": "^0.13.0",
     "reflux": "^0.2.7"
   },

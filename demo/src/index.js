@@ -1,12 +1,17 @@
-var React = require( 'react' );
+let React = require( "react" );
+let SelectRect = require( "../.." );
 
-// Require index.js from the root of the project. That is where our module's interface is specified.
-var ExampleComponent = require( '../..' ).ExampleComponent;
+// Require index.js from the root of the project. That is where our module"s interface is specified.
+let ExampleComponent = require( "../.." ).ExampleComponent;
 
-var demo = (
-	<ExampleComponent message='some demo data, just a string in this case'>
-		<strong>A React front end module</strong>
-	</ExampleComponent>
+let demo = (
+	<SelectRect
+		backgroundSrc={ "/images/selectrect.png" }
+		initialSelection={[ 200, 100, 400, 200 ]}
+		scale={ 1 / 3 }
+		aspectRatio={ 2 / 1 }
+		updateSelection={ console.log }
+	/>
 );
 
 React.render( demo, document.body );
