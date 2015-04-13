@@ -1,9 +1,9 @@
 {
-  "name": "fembot",
-  "version": "1.1.0",
-  "description": "Seed project for front end modules.",
+  "name": "select-rect",
+  "version": "0.1.0",
+  "description": "Rectangular selector widget.",
   "main": "index.js",
-  "repository": "https://bitbucket.org/menapost/fembot",
+  "repository": "https://bitbucket.org/menapost/selectrect",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
