@@ -31,7 +31,8 @@
   },
   "browserify": {
     "transform": [
-      "reactify"
+      "reactify",
+      "es6ify"
     ]
   }
 }
