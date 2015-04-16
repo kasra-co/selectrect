@@ -12,9 +12,13 @@ let demo = (
 			backgroundSrc={ "/images/selectrect.png" }
 			initialSelection={[ 200, 100, 400, 200 ]}
 			scale={ 1 / 3 }
-			minSize={[ 200, 100 ]}
+			minSize={[ 400, 200 ]}
 			aspectRatio={ 2 / 1 }
-			updateSelection={ function( x0, y0, x1, y1 ) { console.log( x0, y0, x1, y1 ); }}
+			updateSelection={
+				function( x0, y0, x1, y1 ) {
+					//console.log( x0, y0, x1, y1 );
+				}
+			}
 		/>
 	</div>
 );
