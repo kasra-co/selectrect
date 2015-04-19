@@ -9,7 +9,7 @@ window.tracing = false;
 let Demo = React.createClass({
 	render() {
 		return (
-			<div>
+			<div id="demo">
 				<h2>Selection Rectangle Demo</h2>
 				{ this.state.tracing? <p>Coordinates are in the console.</p>: null }
 				<button onClick={ this.toggle }>

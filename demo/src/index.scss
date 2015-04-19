@@ -12,3 +12,7 @@ body { margin: 0; padding: 10px; }
 .clearfix:before,
 .clearfix:after {content: "";display: table; }
 .clearfix:after { clear: both; }
+
+.select-rect {
+	width: 500px;
+}
