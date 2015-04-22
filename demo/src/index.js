@@ -17,10 +17,7 @@ let Demo = React.createClass({
 				</button><br/>
 				<SelectRect
 					backgroundSrc={ "/images/selectrect.png" }
-					initialSelection={[ 200, 100, 400, 200 ]}
-					scale={ 1 / 3 }
-					minSize={[ 400, 200 ]}
-					aspectRatio={ 2 / 1 }
+					size={[ 400, 200 ]}
 					updateSelection={ this.trace }
 				/>
 			</div>
