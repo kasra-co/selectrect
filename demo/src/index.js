@@ -12,9 +12,6 @@ let Demo = React.createClass({
 			<div id="demo">
 				<h2>Selection Rectangle Demo</h2>
 				{ this.state.tracing? <p>Coordinates are in the console.</p>: null }
-				<button onClick={ this.toggle }>
-					{ this.state.tracing? "stop ": "" }trace
-				</button><br/>
 				<SelectRect
 					backgroundSrc={ "/images/selectrect.png" }
 					size={[ 400, 200 ]}
@@ -30,16 +27,8 @@ let Demo = React.createClass({
 		};
 	},
 
-	toggle() {
-		this.setState({
-			tracing: !this.state.tracing
-		});
-	},
-
 	trace( x0, y0, x1, y1 ) {
-		if( this.state.tracing ) {
-			console.log( x0, y0, x1, y1 );
-		}
+		console.log( x0, y0, x1, y1 );
 	}
 });
 
