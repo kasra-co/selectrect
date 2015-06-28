@@ -1,1 +1,1 @@
-module.exports = require( './lib/select-rect' );
+module.exports = require( './lib' );

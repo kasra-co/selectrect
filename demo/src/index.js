@@ -1,8 +1,5 @@
 let React = require( "react" );
-let SelectRect = require( "../.." );
-
-// Require index.js from the root of the project. That is where our module"s interface is specified.
-let ExampleComponent = require( "../.." ).ExampleComponent;
+let SelectRect = require( "../../src" );
 
 window.tracing = false;
 
