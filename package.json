@@ -1,6 +1,6 @@
 {
   "name": "select-rect",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Rectangular selector widget.",
   "main": "index.js",
   "repository": "https://bitbucket.org/menapost/selectrect",
